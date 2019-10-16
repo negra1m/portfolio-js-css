@@ -11,10 +11,11 @@ document.head.appendChild(imported);
  * Event Listeners
  */
 let chartsArray = document.querySelectorAll('.chartLink');
+let infoArray = document.querySelectorAll('.projectLink');
 
 chartsArray.forEach(function(elem) {
 	elem.addEventListener('mouseenter', function(event) {
-		const caller = event.toElement.innerHTML;
+		let caller = event.toElement.innerHTML;
 		switch (caller) {
 			case 'HTML':
 				buildChart(data.html);
@@ -35,22 +36,10 @@ chartsArray.forEach(function(elem) {
 	});
 });
 
-let infoArray = document.querySelectorAll('.projectLink');
-
 infoArray.forEach(function(elem) {
 	elem.addEventListener('mouseenter', function(event) {
-		const caller = event.toElement.innerHTML;
-		switch (caller) {
-			case 'WEBSITES':
-				dataChange(caller);
-				break;
-			case 'IONIC APPS':
-				dataChange(caller);
-				break;
-			case 'ANGULAR':
-				dataChange(caller);
-				break;
-		}
+		let caller = event.toElement.innerHTML;
+		dataChange(caller);
 	});
 });
 
@@ -69,4 +58,12 @@ function buildChart(caller) {
 	});
 }
 
-function dataChange(caller) {}
+function dataChange(callerId) {
+	const caller = document.getElementById(callerId.toLowerCase());
+	infoArray.forEach(function(elem) {
+		const e = elem.innerHTML;
+		const elementInvisible = document.getElementById(e.toLowerCase());
+		elementInvisible.classList.remove('-visible');
+	});
+	caller.classList.add('-visible');
+}
