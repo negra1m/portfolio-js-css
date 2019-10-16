@@ -84,8 +84,8 @@ p {
 	justify-content: space-around;
 }
 
-.header > .menu > .item > li {
-	color: #fff;
+.header > .menu > .item {
+	color: #333;
 	letter-spacing: 1px;
 	list-style: none;
 }

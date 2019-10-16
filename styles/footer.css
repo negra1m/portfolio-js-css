@@ -5,7 +5,7 @@ footer > .content {
 }
 
 footer {
-	margin-top: 20em;
+	margin-top: 10em;
 	background-color: #ddd;
 }
 
@@ -15,7 +15,7 @@ footer {
 	align-content: center;
 }
 
-.social-bar > .social {
+.social-bar > a > .social {
 	min-width: 50px;
 	min-height: 50px;
 	max-width: 50px;

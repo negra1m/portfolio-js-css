@@ -95,6 +95,37 @@ body {
 	border: none;
 }
 
+.jobs {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+.jobs > .projects {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.jobs > .content {
+	width: 60%;
+}
+
+.jobs > .content > div {
+	display: none;
+	text-align: center;
+	letter-spacing: 2px;
+	color: #333;
+	line-height: 30px;
+}
+
+.websites {
+	display: block !important;
+}
+
 #chart {
 	display: flex;
 	flex-direction: column;

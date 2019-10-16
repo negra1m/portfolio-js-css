@@ -10,11 +10,9 @@
 	</head>
 	<header id="header" class="header">
 		<div id="menu" class="menu">
-			<ul id="items" class="item invisible">
-				<li>Menu 1</li>
-				<li>Menu 2</li>
-				<li>Menu 3</li>
-			</ul>
+			<div id="items" class="item invisible">
+				My first Portfolio!
+			</div>
 		</div>
 		<div id="data" class="data">
 			<div class="image">
@@ -33,12 +31,6 @@
 	</header>
 	<body>
 		<div class="main-container">
-			<div class="menu-data invisible">
-				<div>meu</div>
-				<div>pau de</div>
-				<div>peruquinha</div>
-			</div>
-
 			<div class="check-out">
 				<h3 style="color: #fff">Check out my Portfolio!</h3>
 			</div>
@@ -46,7 +38,11 @@
 			<section class="container">
 				<h2 class="container-title">Skills</h2>
 				<label class="container-title label">(hover on some category)</label>
-				<div class="skills">
+				<div class="skills -charts">
+					<!-- 
+						A lib de chart usada (CHARTJS) apresenta alguns bugs 
+						no hover.
+					-->
 					<div class="text">
 						<p class="chartLink">HTML</p>
 						<p class="chartLink">JS</p>
@@ -54,12 +50,52 @@
 						<p class="chartLink">ANGULAR</p>
 						<p class="chartLink">UX</p>
 					</div>
-					<div class="bar">
+					<div class="bar chart">
 						<canvas id="chart" width="400" height="400"></canvas>
 					</div>
 				</div>
 				<div class="progress-bar"></div>
 			</section>
+			<section class="container">
+				<h2 class="container-title">Projects</h2>
+				<label class="container-title label">check some jobs</label>
+				<div class="jobs">
+					<div class="projects">
+						<p class="projectLink">WEBSITES</p>
+						<p class="projectLink">IONIC APPS</p>
+						<p class="projectLink">ANGULAR</p>
+					</div>
+					<div id="content" class="content">
+						<div class="text-info websites">
+							Alguns websites que fiz para descontrair e testar algumas
+							habilidades podem ser vistos <a href="">aqui</a>.
+							<div class="images">
+								<img src="" alt="" />
+							</div>
+						</div>
+						<div class="ionic">
+							Alguns Apps ionic feitos para atender demandas do setor de
+							engenharia da atual empresa onde trabalho, que podem ser acessados
+							<a href="">aqui</a>.
+							<div class="images">
+								<img src="" alt="" />
+							</div>
+						</div>
+						<div class="angular visible">
+							Web Apps Angular são minha principal paixão, o conteudo onde mas
+							tenho confiança e conhecimento dentre as demais áreas em que atuo.
+							Para ver lindos web apps, <a href="">clique aqui</a>.
+							<div class="images">
+								<img
+									src="https://img.icons8.com/color/48/000000/angularjs.png"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="progress-bar"></div>
+			</section>
+
 			<section class="container last">
 				<h2 class="container-title">Contact</h2>
 				<label class="container-title label">(enter in contact!)</label>
@@ -87,21 +123,30 @@
 				<p>R. Cuca Beludo nº 343</p>
 			</div>
 			<div class="social-bar">
-				<img
-					src="https://img.icons8.com/carbon-copy/100/000000/linkedin.png"
-					alt="Linkedin"
-					class="social"
-				/>
-				<img
-					src="https://img.icons8.com/carbon-copy/100/000000/instagram-new.png"
-					alt="Instagram"
-					class="social"
-				/>
-				<img
-					src="https://img.icons8.com/carbon-copy/100/000000/twitter.png"
-					alt="Twitter"
-					class="social"
-				/>
+				<a
+					href="https://www.linkedin.com/in/vinicius-negr%C3%A3o-de-menezes-b2273198/"
+					target="blank"
+				>
+					<img
+						src="https://img.icons8.com/carbon-copy/100/000000/linkedin.png"
+						alt="Linkedin"
+						class="social"
+					/>
+				</a>
+				<a href="https://instagram.com/negra1m/" target="blank">
+					<img
+						src="https://img.icons8.com/carbon-copy/100/000000/instagram-new.png"
+						alt="Instagram"
+						class="social"
+					/>
+				</a>
+				<a href="" target="blank">
+					<img
+						src="https://img.icons8.com/carbon-copy/100/000000/twitter.png"
+						alt="Twitter"
+						class="social"
+					/>
+				</a>
 			</div>
 		</div>
 	</footer>
