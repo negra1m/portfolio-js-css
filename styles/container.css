@@ -1,11 +1,15 @@
-.main-container {
-	/* -moz-animation: gradientMove 30s ease infinite;
-	-webkit-animation: gradientMove 30s ease infinite;*/
+body {
+	-moz-animation: gradientMove 30s ease infinite;
+	-webkit-animation: gradientMove 30s ease infinite;
 	animation: gradientMove 10s ease-in-out infinite;
 	padding-top: 550px;
 	background: linear-gradient(270deg, #8523d5, #509de8, #57cc6b);
 	background-size: 600% 100%;
 	background-repeat: repeat-x;
+}
+
+.last {
+	margin-bottom: 0px !important;
 }
 
 .container {
@@ -53,11 +57,12 @@
 
 .contact > textarea {
 	width: 100%;
+	font-size: 16px;
 	resize: none;
 	outline: none;
 }
 
-.container > button {
+.contact > input[type='submit'] {
 	border-radius: 5px;
 	background-color: #57cc6b;
 	color: #fff;

@@ -1,0 +1,23 @@
+footer > .content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer {
+	margin-top: 20em;
+	background-color: #ddd;
+}
+
+.content > .social-bar {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.social-bar > .social {
+	min-width: 50px;
+	min-height: 50px;
+	max-width: 50px;
+	max-height: 50px;
+}

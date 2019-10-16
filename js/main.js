@@ -5,7 +5,7 @@ document.head.appendChild(imported);
 let chartsArray = document.querySelectorAll('.chartLink');
 
 chartsArray.forEach(function(elem) {
-	elem.addEventListener('mouseenter', function(event) {
+	elem.addEventListener('click', function(event) {
 		const caller = event.toElement.innerHTML;
 		switch (caller) {
 			case 'HTML':
@@ -34,6 +34,7 @@ function buildChart(caller) {
 		}
 	};
 	var chartDiv = document.getElementById('chart');
+	chartDiv.innerHTML = '';
 	var chart = new Chart(chartDiv, {
 		type: 'pie',
 		data: caller,
