@@ -10,7 +10,7 @@
 	</head>
 	<header id="header" class="header">
 		<div id="menu" class="menu">
-			<div id="items" class="item invisible">
+			<div id="items" class="item -invisible">
 				My first Portfolio!
 			</div>
 		</div>
@@ -30,6 +30,8 @@
 		</div>
 	</header>
 	<body>
+		<a href="#page" id="top" class="top -invisible">Ir para o topo!</a>
+
 		<div class="main-container">
 			<div class="check-out">
 				<h3 style="color: #fff">Check out my Portfolio!</h3>
@@ -113,20 +115,22 @@
 				<h2 class="container-title">Contact</h2>
 				<label class="container-title label">(enter in contact!)</label>
 				<form class="contact" action="">
-					<input type="text" id="" placeholder="Insira seu nome" />
-					<input type="text" id="" placeholder="Insira o Assunto" />
-					<input type="email" id="" placeholder="Insira seu email" />
+					<input type="text" id="name" placeholder="Insira seu nome" />
+					<input type="text" id="subject" placeholder="Insira o Assunto" />
+					<input type="email" id="email" placeholder="Insira seu email" />
+					<div id="error" class="error-message">
+						Preencha todos os campos antes de enviar...
+					</div>
 					<textarea
 						placeholder="Insira sua mensagem de e-mail..."
 						name=""
-						id=""
+						id="message"
 						cols="30"
 						rows="10"
 					></textarea>
-					<input type="submit" value="Enviar" />
 				</form>
+				<button id="send" onclick="send()">Enviar</button>
 			</section>
-			<a href="#page" id="top" class="top invisible">Ir para o topo!</a>
 		</div>
 	</body>
 	<footer>
@@ -165,5 +169,6 @@
 	</footer>
 	<script src="js/components/page.js"></script>
 	<script src="./js/main.js"></script>
+	<script src="./js/modules/API/api.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
 </html>

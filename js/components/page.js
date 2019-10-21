@@ -14,15 +14,15 @@ function checkScroll(components) {
 	const goToTop = document.getElementById('top');
 
 	if (window.scrollY >= 157) {
-		components.items.classList.remove('invisible');
+		components.items.classList.remove('-invisible');
 		components.header.classList.add('resize-on');
 		components.menu.classList.add('display-menu');
-		components.data.classList.add('invisible');
+		components.data.classList.add('-invisible');
 	} else {
-		components.items.classList.add('invisible');
+		components.items.classList.add('-invisible');
 		components.header.classList.remove('resize-on');
 		components.menu.classList.remove('display-menu');
-		components.data.classList.remove('invisible');
+		components.data.classList.remove('-invisible');
 	}
 
 	if (window.scrollY > 600) {

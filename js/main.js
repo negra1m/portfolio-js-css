@@ -67,3 +67,18 @@ function dataChange(callerId) {
 	});
 	caller.classList.add('-visible');
 }
+
+function checkValidators(){
+	let name = document.querySelector('#name').value;
+	let subject = document.querySelector('#subject').value;
+	let email = document.querySelector('#email').value;
+	let message = document.querySelector('#message').value;
+	console.log(name, subject, email, message);
+	return name !== '' && subject !== '' && email !== '' && message !== ''
+}
+
+function displayError(condition){
+	condition ? 
+	document.getElementById('error').classList.add('-visible') :
+	document.getElementById('error').classList.remove('-visible')
+}

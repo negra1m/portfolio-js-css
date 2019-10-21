@@ -19,6 +19,11 @@ p {
 	color: #666;
 }
 
+.error-message {
+	display: none;
+	color: #e73d4b;
+	align-content: center;
+}
 .top {
 	background-color: #333;
 	border-radius: 5px;
@@ -135,7 +140,14 @@ p {
 	display: block !important;
 }
 
-.invisible {
+.-visible {
+	align-content: center;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.-invisible {
 	display: none !important;
 	opacity: 0 !important;
 	width: 0;

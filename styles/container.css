@@ -7,16 +7,6 @@ body {
 	background-size: 600% 100%;
 	background-repeat: repeat-x;
 }
-.-visible {
-	display: flex !important;
-	flex-direction: column;
-	align-content: center;
-	justify-content: space-around;
-}
-
-.-invisible {
-	display: none !important;
-}
 
 .last {
 	margin-bottom: 0px !important;
