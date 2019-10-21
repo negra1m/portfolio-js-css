@@ -26,10 +26,10 @@ function checkScroll(components) {
 	}
 
 	if (window.scrollY > 600) {
-		goToTop.classList.add('visible');
-		goToTop.classList.remove('invisible');
+		goToTop.classList.add('-visible');
+		goToTop.classList.remove('-invisible');
 	} else {
-		goToTop.classList.add('invisible');
-		goToTop.classList.remove('visible');
+		goToTop.classList.add('-invisible');
+		goToTop.classList.remove('-visible');
 	}
 }

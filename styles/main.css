@@ -186,3 +186,19 @@ p {
 		background-position: 68% 0%;
 	}
 }
+
+@media (max-width: 1000px) 
+{
+	.image > img {
+	max-width: 80%;
+   }
+   header .content {
+	   font-size: 10px;
+   }
+   header {
+	max-height: 50%;
+   }
+   .title {
+	   font-size: 16px!important;
+   }
+}
